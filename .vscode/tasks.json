@@ -1,16 +1,16 @@
 {
     "version": "2.0.0",
     "command": "make",
+    "isShellCommand": true,
     "args": [],
-    "presentation" : { "reveal": "always" },
+    "showOutput": "always",
     "echoCommand": true,
-    "suppresslabel": true,
+    "suppressTaskName": true,
     "tasks": [
         {
-            "label": "build",
-            "args": ["-j4"],
-            "type": "shell",
-            "command": "make",
+            "taskName": "build",
+            "isBuildCommand": true,
+            "args": [],
             "problemMatcher": {
                 "owner": "cpp",
                 "fileLocation": ["relative", "${workspaceRoot}"],
@@ -22,64 +22,22 @@
                     "severity": 4,
                     "message": 5
                 }
-            },
-            "group": {
-                "kind": "build",
-                "isDefault": true
             }
         },
         {
-            "label": "dfu",
-            "type": "shell",
+            "taskName": "dfu",
             "args": ["dfu"]
         },
         {
-            "label": "flash",
-            "type": "shell",
-            "command": "bcf",
-
-            // Interactive serial port selection with focus to the console
-            "args": ["flash"],
-            "presentation": {"focus": true},
-
-            // Windows - Flash to the selected serial port
-            //"args": ["flash", "--device", "COM1"],
-
-            // Linux - Flash to the selected serial port
-            //"args": ["flash", "--device", "/dev/ttyUSB0"],
-
-            "problemMatcher": []
-        },
-        {
-            "label": "flash+log",
-            "type": "shell",
-            "command": "bcf",
-
-            // Interactive serial port selection with focus to the console
-            "args": ["flash", "--log"],
-            "presentation": {"focus": true},
-
-            // Windows - Flash to the selected serial port
-            //"args": ["flash", "--device", "COM1", "--log"],
-
-            // Linux - Flash to the selected serial port
-            //"args": ["flash", "--device", "/dev/ttyUSB0", "--log"],
-
-            "problemMatcher": []
-        },
-        {
-            "label": "ozone",
-            "type": "shell",
+            "taskName": "ozone",
             "args": ["ozone"]
         },
         {
-            "label": "update",
-            "type": "shell",
+            "taskName": "update",
             "args": ["update"]
         },
         {
-            "label": "clean",
-            "type": "shell",
+            "taskName": "clean",
             "args": ["clean"]
         }
     ]

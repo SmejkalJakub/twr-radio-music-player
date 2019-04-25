@@ -54,6 +54,8 @@ void application_init(void)
     bc_led_init(&led, BC_GPIO_LED, false, false);
     bc_led_set_mode(&led, BC_LED_MODE_OFF);
 
+    bc_log_init(BC_LOG_LEVEL_DUMP, BC_LOG_TIMESTAMP_ABS);
+
     // Initialize radio
     bc_radio_init(BC_RADIO_MODE_NODE_LISTENING);
     bc_radio_set_subs((bc_radio_sub_t *) subs, sizeof(subs)/sizeof(bc_radio_sub_t));
