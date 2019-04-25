@@ -32,6 +32,7 @@ void bc_music_set_radio(uint64_t *id, const char *topic, void *value, void *para
     bc_led_pulse(&led, 1000);
     int command = (int *)param;
     int data = *(int *)value;
+    bc_log_debug("jsem tu %d %d", command, data);
 
     commandBuffer[3] = controlCommands[command];
     if(command == BC_MUSIC_FOLDER)
