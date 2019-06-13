@@ -21,6 +21,7 @@ typedef enum
     BC_MUSIC_PAUSE = 10,
     BC_MUSIC_STOP = 11,
     BC_MUSIC_FOLDER = 12
+    
 }bc_music_commands_t;  
 
 

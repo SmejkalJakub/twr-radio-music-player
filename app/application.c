@@ -32,7 +32,6 @@ void bc_music_set_radio(uint64_t *id, const char *topic, void *value, void *para
     bc_led_pulse(&led, 1000);
     int command = (int *)param;
     int data = *(int *)value;
-    bc_log_debug("jsem tu %d %d", command, data);
 
     commandBuffer[3] = controlCommands[command];
     if(command == BC_MUSIC_FOLDER)
@@ -55,7 +54,7 @@ void application_init(void)
     bc_led_init(&led, BC_GPIO_LED, false, false);
     bc_led_set_mode(&led, BC_LED_MODE_OFF);
 
-    bc_log_init(BC_LOG_LEVEL_DUMP, BC_LOG_TIMESTAMP_ABS);
+    //bc_log_init(BC_LOG_LEVEL_DUMP, BC_LOG_TIMESTAMP_ABS);
 
     // Initialize radio
     bc_radio_init(BC_RADIO_MODE_NODE_LISTENING);
