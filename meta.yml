@@ -1,4 +1,10 @@
 article: https://www.hackster.io/152814/smart-wireless-bigclown-mp3-player-765d86
+articles:
+  - title: Smart Wireless BigClown MP3 Player
+    url: https://www.hackster.io/152814/smart-wireless-bigclown-mp3-player-765d86
+    description: With this project you can play any sound from your SD card on your audio system. Only wire you will need is 3.5mm jack.
+    images:
+      - url: https://hackster.imgix.net/uploads/attachments/983389/_r3BsnVoGr0.uploads%252Ftmp%252Faa18107b-6856-462e-b03b-be9993c12775%252Fblob?auto=compress%2Cformat&w=900&h=675&fit=min
 assembly:
   - name: BigClown Core Module
   - name: BigClown Power Module
