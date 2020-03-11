@@ -6,5 +6,6 @@ articles:
     images:
       - url: https://hackster.imgix.net/uploads/attachments/1050331/_kyWExBMKLd.blob?auto=compress%2Cformat&w=900&h=675&fit=min
 assembly:
-  - name: BigClown Core Module
-  - name: BigClown Power Module
+  - name: HARDWARIO Core Module
+  - name: HARDWARIO Power Module
+  - name: YX5300 UART MP3 Player
