@@ -2,7 +2,7 @@
 
 # MP3 Player with YX5300 and Core Module
 
-[![Travis](https://img.shields.io/travis/bigclownprojects/bcf-radio-music-player/master.svg)](https://travis-ci.org/bigclownprojects/bcf-radio-music-player)
+[![build](https://github.com/hardwario/twr-radio-music-player/actions/workflows/main.yml/badge.svg)](https://github.com/hardwario/twr-radio-music-player/actions/workflows/main.yml)
 [![Release](https://img.shields.io/github/release/bigclownprojects/bcf-radio-music-player.svg)](https://github.com/bigclownprojects/bcf-radio-music-player/releases)
 [![License](https://img.shields.io/github/license/bigclownprojects/bcf-radio-music-player.svg)](https://github.com/bigclownprojects/bcf-radio-music-player/blob/master/LICENSE)
 [![Twitter](https://img.shields.io/twitter/follow/hardwario_en.svg?style=social&label=Follow)](https://twitter.com/hardwario_en)
